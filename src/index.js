@@ -1,8 +1,8 @@
 export default ({ types: t }) => {
-  const buildPropertyAssignment = (objName, propName, valueNode) =>
+  const buildPropertyAssignment = (objectName, propName, valueNode) =>
     t.assignmentExpression(
       '=',
-      t.memberExpression(t.identifier(objName), t.identifier(propName)),
+      t.memberExpression(t.identifier(objectName), t.identifier(propName)),
       valueNode
     )
 
